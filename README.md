@@ -1,0 +1,2 @@
+# OV7642_verification_model
+The project contains a camera model for 0V7670 which sends data in YUV 422 640x480 @15fps. Testbench is using  a picture formatted as .hex as data input, The output of the camera model is wired up to a im_write stub which then writes the image back to output.bmp for verification purposes. A matlab script parses a input.bmp file which then generates a input.hex file.  Based on the code from https://www.fpga4student.com/2018/08/how-to-read-image-in-vhdl.html
